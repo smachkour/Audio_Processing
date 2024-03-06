@@ -1,0 +1,29 @@
+16:47:21 **** Incremental Build of configuration Debug for project InterruptSignalApp_1 ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/devWorks/PBEAICT/J2/S2/AP/LAB2/Lab2_platform/export/Lab2_platform/sw/Lab2_platform/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Timer_Intr_Setup':
+../src/helloworld.c:38:13: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+   38 |         int Status;
+      |             ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: InterruptSignalApp_1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/devWorks/PBEAICT/J2/S2/AP/LAB2/Lab2_platform/export/Lab2_platform/sw/Lab2_platform/standalone_ps7_cortexa9_0/bsplib/lib -o "InterruptSignalApp_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: InterruptSignalApp_1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size InterruptSignalApp_1.elf  |tee "InterruptSignalApp_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35836	   1952	  22712	  60500	   ec54	InterruptSignalApp_1.elf
+'Finished building: InterruptSignalApp_1.elf.size'
+' '
+
+16:47:22 Build Finished (took 937ms)
+

@@ -1,0 +1,63 @@
+16:46:04 **** Build of configuration Debug for project DelayApp_2 ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/devWorks/PBEAICT/J2/S2/AP/LAB2/Lab2_platform/export/Lab2_platform/sw/Lab2_platform/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'I2S_HANDLER':
+../src/helloworld.c:36:3: error: 'audio_IN' undeclared (first use in this function); did you mean 'audio_chL'?
+   36 |   audio_IN = i2s_rx ();
+      |   ^~~~~~~~
+      |   audio_chL
+../src/helloworld.c:36:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:36:14: warning: implicit declaration of function 'i2s_rx' [-Wimplicit-function-declaration]
+   36 |   audio_IN = i2s_rx ();
+      |              ^~~~~~
+../src/helloworld.c:37:29: error: expected ')' before 'x0000FFFF'
+   37 |   audio_chL = ( audio_IN & 0 x0000FFFF );
+      |               ~             ^~~~~~~~~~
+      |                             )
+../src/helloworld.c:38:29: error: expected expression before '>' token
+   38 |   audio_chR = (( audio_IN > >16)& 0 x0000FFFF );
+      |                             ^
+../src/helloworld.c:38:36: error: expected ')' before 'x0000FFFF'
+   38 |   audio_chR = (( audio_IN > >16)& 0 x0000FFFF );
+      |               ~                    ^~~~~~~~~~
+      |                                    )
+../src/helloworld.c:44:3: error: 'audio_OUT' undeclared (first use in this function); did you mean 'audio_chL'?
+   44 |   audio_OUT = (( audio_chR < <16 & 0 xFFFF0000 )) | ( audio_out_chL & 0 x0000FFFF );
+      |   ^~~~~~~~~
+      |   audio_chL
+../src/helloworld.c:44:30: error: expected expression before '<' token
+   44 |   audio_OUT = (( audio_chR < <16 & 0 xFFFF0000 )) | ( audio_out_chL & 0 x0000FFFF );
+      |                              ^
+../src/helloworld.c:44:72: error: expected ')' before 'x0000FFFF'
+   44 |   audio_OUT = (( audio_chR < <16 & 0 xFFFF0000 )) | ( audio_out_chL & 0 x0000FFFF );
+      |                                                     ~                  ^~~~~~~~~~
+      |                                                                        )
+../src/helloworld.c:45:3: warning: implicit declaration of function 'i2s_tx' [-Wimplicit-function-declaration]
+   45 |   i2s_tx ( audio_OUT );
+      |   ^~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:52:5: warning: implicit declaration of function 'audio_init'; did you mean 'audio_test'? [-Wimplicit-function-declaration]
+   52 |     audio_init ( hz48000 , mic_in , intr , I2S_HANDLER );
+      |     ^~~~~~~~~~
+      |     audio_test
+../src/helloworld.c:52:18: error: 'hz48000' undeclared (first use in this function)
+   52 |     audio_init ( hz48000 , mic_in , intr , I2S_HANDLER );
+      |                  ^~~~~~~
+../src/helloworld.c:52:28: error: 'mic_in' undeclared (first use in this function)
+   52 |     audio_init ( hz48000 , mic_in , intr , I2S_HANDLER );
+      |                            ^~~~~~
+../src/helloworld.c:52:37: error: 'intr' undeclared (first use in this function); did you mean 'int'?
+   52 |     audio_init ( hz48000 , mic_in , intr , I2S_HANDLER );
+      |                                     ^~~~
+      |                                     int
+make[1]: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+make: *** [makefile:34: all] Error 2
+
+16:46:04 Build Finished (took 495ms)
+
