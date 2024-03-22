@@ -1,0 +1,14 @@
+10:00:21 **** Incremental Build of configuration Debug for project EchoApp_3_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 51614 D:/devWorks/PBEAICT/J2/S2/AP/LAB2/Lab2_platform/export/Lab2_platform/Lab2_platform.xpfm standalone_ps7_cortexa9_0 D:/devWorks/PBEAICT/J2/S2/AP/LAB2/EchoApp_3_system/Debug/system.bif
+ECHO is off.
+ECHO is off.
+sdcard_gen --xpfm D:/devWorks/PBEAICT/J2/S2/AP/LAB2/Lab2_platform/export/Lab2_platform/Lab2_platform.xpfm --sys_config Lab2_platform --bif D:/devWorks/PBEAICT/J2/S2/AP/LAB2/EchoApp_3_system/Debug/system.bif --bitstream D:/devWorks/PBEAICT/J2/S2/AP/LAB2/EchoApp_3/_ide/bitstream/AudioProcessing2.bit --elf D:/devWorks/PBEAICT/J2/S2/AP/LAB2/EchoApp_3/Debug/EchoApp_3.elf,ps7_cortexa9_0
+ECHO is off.
+ECHO is off.
+creating BOOT.BIN using D:/devWorks/PBEAICT/J2/S2/AP/LAB2/EchoApp_3/_ide/bitstream/AudioProcessing2.bit
+Running C:/Xilinx/Vitis/2023.2/bin/bootgen  -image D:/devWorks/PBEAICT/J2/S2/AP/LAB2/EchoApp_3_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+10:00:30 Build Finished (took 8s.906ms)
+

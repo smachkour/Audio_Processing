@@ -17,6 +17,7 @@
 #define SAMPLE_RATE 48000
 
 XGpioPs GpioPs;
+XGpioPs_Config *ConfigPtr;
 
 volatile unsigned long u32DataL, u32DataR;
 volatile unsigned long u32Temp;
@@ -29,7 +30,7 @@ static void Timer_ISR(void * CallBackRef)
   		u32DataL = Xil_In32(I2S_DATA_RX_L_REG);
   		Xil_Out32(I2S_DATA_TX_L_REG, u32DataL);
   		data = ~data;
-  	  XGpioPs_WritePin(&GpioPs, GPIOPS_BANK, 0x80);
+  		XGpioPs_Write(&GpioPs, GPIOPS_BANK, data);
 
 }
 
@@ -93,8 +94,8 @@ int main()
   XScuTimer_Start(&Scu_Timer);
 
 
-  XGpioPs_SetDirectionPin(&GpioPs, GPIOPS_BANK, 0x80);
-  XGpioPs_SetOutputEnablePin(&GpioPs, GPIOPS_BANK, 0x80);
+  XGpioPs_SetDirection(&GpioPs, GPIOPS_BANK, 0x80);
+  XGpioPs_SetOutputEnable(&GpioPs, GPIOPS_BANK, 0x80);
 
   for(;;){
   }
