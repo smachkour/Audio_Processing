@@ -5,6 +5,6 @@ This project is developed using Vitis Classic 2023.2 and targets the PYNQ-Z2 dev
 ## Prerequisites
 To get started with this project, you will need: <br>
 
-Hardware: PYNQ-Z2 FPGA development board. <br>
-Software: Vitis Classic 2023.2. Ensure that you have the Vitis Core Development Kit installed and configured properly for your system. <br>
-          Audacity for signal analysis.
+**Hardware:** PYNQ-Z2 FPGA development board. <br>
+**Software:** Vitis Classic 2023.2. Ensure that you have the Vitis Core Development Kit installed and configured properly for your system. <br>
+&nbsp; Audacity for signal analysis.
