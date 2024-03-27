@@ -1484,3 +1484,58 @@ con
 
 13:24:29 INFO  : Launch script is exported to file 'D:\devWorks\PBEAICT\J2\S2\AP\LAB1\SignaalGeneratieApp_system\_ide\scripts\debugger_signaalgeneratieapp-default.tcl'
 13:39:13 INFO  : Disconnected from the channel tcfchan#2.
+10:16:31 DEBUG : Logs will be stored at 'C:/Users/machk/gitkraken/Audio_Processing/LAB1/IDE.log'.
+10:16:32 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\machk\gitkraken\Audio_Processing\LAB1\temp_xsdb_launch_script.tcl
+10:16:35 INFO  : XSCT server has started successfully.
+10:16:35 INFO  : Successfully done setting XSCT server connection channel  
+10:16:35 INFO  : plnx-install-location is set to ''
+10:16:35 INFO  : Successfully done setting workspace for the tool. 
+10:16:38 INFO  : Platform repository initialization has completed.
+10:16:38 INFO  : Successfully done query RDI_DATADIR 
+10:16:38 INFO  : Registering command handlers for Vitis TCF services
+10:16:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:16:52 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+10:16:52 INFO  : 'jtag frequency' command is executed.
+10:16:53 INFO  : Context for 'APU' is selected.
+10:16:53 INFO  : System reset is completed.
+10:16:56 INFO  : 'after 3000' command is executed.
+10:16:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+10:17:00 INFO  : Device configured successfully with "C:/Users/machk/gitkraken/Audio_Processing/LAB1/SignaalGeneratieApp/_ide/bitstream/AudioProcessing2.bit"
+10:17:01 INFO  : Context for 'APU' is selected.
+10:17:01 INFO  : Hardware design and registers information is loaded from 'D:/devWorks/PBEAICT/J2/S2/AP/LAB1/GenerateSignals/export/GenerateSignals/hw/AudioProcessing2.xsa'.
+10:17:01 INFO  : 'configparams force-mem-access 1' command is executed.
+10:17:01 INFO  : Context for 'APU' is selected.
+10:17:01 INFO  : Sourcing of 'C:/Users/machk/gitkraken/Audio_Processing/LAB1/SignaalGeneratieApp/_ide/psinit/ps7_init.tcl' is done.
+10:17:02 INFO  : 'ps7_init' command is executed.
+10:17:02 INFO  : 'ps7_post_config' command is executed.
+10:17:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:17:02 INFO  : The application 'C:/Users/machk/gitkraken/Audio_Processing/LAB1/SignaalGeneratieApp/Debug/SignaalGeneratieApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:17:02 INFO  : 'configparams force-mem-access 0' command is executed.
+10:17:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Users/machk/gitkraken/Audio_Processing/LAB1/SignaalGeneratieApp/_ide/bitstream/AudioProcessing2.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/devWorks/PBEAICT/J2/S2/AP/LAB1/GenerateSignals/export/GenerateSignals/hw/AudioProcessing2.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/machk/gitkraken/Audio_Processing/LAB1/SignaalGeneratieApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/machk/gitkraken/Audio_Processing/LAB1/SignaalGeneratieApp/Debug/SignaalGeneratieApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:17:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:17:02 INFO  : 'con' command is executed.
+10:17:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:17:02 INFO  : Launch script is exported to file 'C:\Users\machk\gitkraken\Audio_Processing\LAB1\SignaalGeneratieApp_system\_ide\scripts\debugger_signaalgeneratieapp-default.tcl'
+10:17:53 INFO  : Disconnected from the channel tcfchan#1.

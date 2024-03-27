@@ -45,3 +45,6 @@ timestamp=[2024-02-28 13:19:55], mode=BUILD, duration=0:00:01.462, duration_ms=1
 timestamp=[2024-02-28 13:23:37], mode=BUILD, duration=0:00:01.007, duration_ms=1007, data={name=SignaalGeneratieApp, configuration=Debug, clean_build=false}
 timestamp=[2024-02-28 13:23:49], mode=BUILD, duration=0:00:01.489, duration_ms=1489, data={name=SignaalGeneratieApp, configuration=Debug, clean_build=false}
 timestamp=[2024-02-28 13:24:17], mode=BUILD, duration=0:00:00.849, duration_ms=849, data={name=SignaalGeneratieApp, configuration=Debug, clean_build=false}
+timestamp=[2024-03-27 10:16:37], mode=WORKBENCH_START, duration=0:00:11.638, duration_ms=11638, data={}
+timestamp=[2024-03-27 10:16:38], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.098, duration_ms=98, data={}
+timestamp=[2024-03-27 10:16:38], mode=WORKBENCH_UI_INIT, duration=0:00:01.524, duration_ms=1524, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=GenerateSignals,RemoteSystemsTempFiles,SignaalGeneratieApp,SignaalGeneratieApp_system}

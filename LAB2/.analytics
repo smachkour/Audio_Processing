@@ -61,3 +61,8 @@ timestamp=[2024-03-13 10:14:15], mode=BUILD, duration=0:00:01.042, duration_ms=1
 timestamp=[2024-03-13 10:14:46], mode=BUILD, duration=0:00:01.703, duration_ms=1703, data={name=InterruptSignalApp_1, configuration=Debug, clean_build=false}
 timestamp=[2024-03-13 10:16:37], mode=BUILD, duration=0:00:02.298, duration_ms=2298, data={name=InterruptSignalApp_1, configuration=Debug, clean_build=false}
 timestamp=[2024-03-13 10:21:40], mode=BUILD, duration=0:00:01.009, duration_ms=1009, data={name=DelayApp_2, configuration=Debug, clean_build=false}
+timestamp=[2024-03-27 10:14:35], mode=WORKBENCH_START, duration=0:00:10.378, duration_ms=10378, data={}
+timestamp=[2024-03-27 10:14:36], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.127, duration_ms=127, data={}
+timestamp=[2024-03-27 10:14:37], mode=WORKBENCH_UI_INIT, duration=0:00:01.502, duration_ms=1502, data={editors_count=5, platform_editors_count=1, projects_count=8, platform_projects_count=1, active_platform_editor=false, projects=DelayApp_2,DelayApp_2_system,EchoApp_3,EchoApp_3_system,InterruptSignalApp_1,InterruptSignalApp_1_system,Lab2_platform,RemoteSystemsTempFiles}
+timestamp=[2024-03-27 10:14:46], mode=BUILD, duration=0:00:00.421, duration_ms=421, data={name=InterruptSignalApp_1, configuration=Debug, clean_build=false}
+timestamp=[2024-03-27 10:14:54], mode=BUILD, duration=0:00:08.066, duration_ms=8066, data={name=InterruptSignalApp_1_system, configuration=Debug, clean_build=false}

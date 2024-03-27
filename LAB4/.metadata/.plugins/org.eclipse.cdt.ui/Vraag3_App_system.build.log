@@ -1,0 +1,14 @@
+10:09:09 **** Build of configuration Debug for project Vraag3_App_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 7726 C:/Users/machk/gitkraken/Audio_Processing/LAB4/AudioProcessing2/export/AudioProcessing2/AudioProcessing2.xpfm standalone_ps7_cortexa9_0 C:/Users/machk/gitkraken/Audio_Processing/LAB4/Vraag3_App_system/Debug/system.bif
+ECHO is off.
+ECHO is off.
+sdcard_gen --xpfm C:/Users/machk/gitkraken/Audio_Processing/LAB4/AudioProcessing2/export/AudioProcessing2/AudioProcessing2.xpfm --sys_config AudioProcessing2 --bif C:/Users/machk/gitkraken/Audio_Processing/LAB4/Vraag3_App_system/Debug/system.bif --bitstream C:/Users/machk/gitkraken/Audio_Processing/LAB4/Vraag3_App/_ide/bitstream/AudioProcessing2.bit --elf C:/Users/machk/gitkraken/Audio_Processing/LAB4/Vraag3_App/Debug/Vraag3_App.elf,ps7_cortexa9_0
+ECHO is off.
+ECHO is off.
+creating BOOT.BIN using C:/Users/machk/gitkraken/Audio_Processing/LAB4/Vraag3_App/_ide/bitstream/AudioProcessing2.bit
+Running C:/Xilinx/Vitis/2023.2/bin/bootgen  -image C:/Users/machk/gitkraken/Audio_Processing/LAB4/Vraag3_App_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+10:09:18 Build Finished (took 8s.385ms)
+

@@ -489,3 +489,61 @@ Troubleshooting hints:
 1. Check whether board is connected to system properly.
 2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
 3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+10:14:31 DEBUG : Logs will be stored at 'C:/Users/machk/gitkraken/Audio_Processing/LAB2/IDE.log'.
+10:14:32 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\machk\gitkraken\Audio_Processing\LAB2\temp_xsdb_launch_script.tcl
+10:14:35 INFO  : XSCT server has started successfully.
+10:14:35 INFO  : Successfully done setting XSCT server connection channel  
+10:14:35 INFO  : plnx-install-location is set to ''
+10:14:35 INFO  : Successfully done setting workspace for the tool. 
+10:14:36 INFO  : Platform repository initialization has completed.
+10:14:37 INFO  : Successfully done query RDI_DATADIR 
+10:14:37 INFO  : Registering command handlers for Vitis TCF services
+10:14:42 INFO  : Checking for BSP changes to sync application flags for project 'InterruptSignalApp_1'...
+10:14:49 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file D:/devWorks/PBEAICT/J2/S2/AP/LAB2/Lab2_platform/export/Lab2_platform/hw/AudioProcessing2.xsa is already opened
+
+10:15:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:15:30 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+10:15:30 INFO  : 'jtag frequency' command is executed.
+10:15:30 INFO  : Context for 'APU' is selected.
+10:15:30 INFO  : System reset is completed.
+10:15:33 INFO  : 'after 3000' command is executed.
+10:15:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+10:15:37 INFO  : Device configured successfully with "C:/Users/machk/gitkraken/Audio_Processing/LAB2/InterruptSignalApp_1/_ide/bitstream/AudioProcessing2.bit"
+10:15:38 INFO  : Context for 'APU' is selected.
+10:15:38 INFO  : Hardware design and registers information is loaded from 'D:/devWorks/PBEAICT/J2/S2/AP/LAB2/Lab2_platform/export/Lab2_platform/hw/AudioProcessing2.xsa'.
+10:15:38 INFO  : 'configparams force-mem-access 1' command is executed.
+10:15:38 INFO  : Context for 'APU' is selected.
+10:15:38 INFO  : Sourcing of 'C:/Users/machk/gitkraken/Audio_Processing/LAB2/InterruptSignalApp_1/_ide/psinit/ps7_init.tcl' is done.
+10:15:39 INFO  : 'ps7_init' command is executed.
+10:15:39 INFO  : 'ps7_post_config' command is executed.
+10:15:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:15:39 INFO  : The application 'C:/Users/machk/gitkraken/Audio_Processing/LAB2/InterruptSignalApp_1/Debug/InterruptSignalApp_1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:15:40 INFO  : 'configparams force-mem-access 0' command is executed.
+10:15:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Users/machk/gitkraken/Audio_Processing/LAB2/InterruptSignalApp_1/_ide/bitstream/AudioProcessing2.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/devWorks/PBEAICT/J2/S2/AP/LAB2/Lab2_platform/export/Lab2_platform/hw/AudioProcessing2.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/machk/gitkraken/Audio_Processing/LAB2/InterruptSignalApp_1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/machk/gitkraken/Audio_Processing/LAB2/InterruptSignalApp_1/Debug/InterruptSignalApp_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:15:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:15:40 INFO  : 'con' command is executed.
+10:15:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:15:40 INFO  : Launch script is exported to file 'C:\Users\machk\gitkraken\Audio_Processing\LAB2\InterruptSignalApp_1_system\_ide\scripts\debugger_interruptsignalapp_1-default.tcl'
+10:16:20 INFO  : Disconnected from the channel tcfchan#2.

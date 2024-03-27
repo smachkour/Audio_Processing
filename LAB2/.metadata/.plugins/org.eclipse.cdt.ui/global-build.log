@@ -1,9 +1,20 @@
 Nothing to build in platform 'Lab2_platform'
 
-10:21:39 **** Incremental Build of configuration Debug for project DelayApp_2 ****
+10:14:45 **** Incremental Build of configuration Debug for project InterruptSignalApp_1 ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
 make[1]: Nothing to be done for 'main-build'.
+10:14:46 **** Build of configuration Debug for project InterruptSignalApp_1_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 9772 D:/devWorks/PBEAICT/J2/S2/AP/LAB2/Lab2_platform/export/Lab2_platform/Lab2_platform.xpfm standalone_ps7_cortexa9_0 C:/Users/machk/gitkraken/Audio_Processing/LAB2/InterruptSignalApp_1_system/Debug/system.bif
+ECHO is off.
+ECHO is off.
+sdcard_gen --xpfm D:/devWorks/PBEAICT/J2/S2/AP/LAB2/Lab2_platform/export/Lab2_platform/Lab2_platform.xpfm --sys_config Lab2_platform --bif C:/Users/machk/gitkraken/Audio_Processing/LAB2/InterruptSignalApp_1_system/Debug/system.bif --bitstream C:/Users/machk/gitkraken/Audio_Processing/LAB2/InterruptSignalApp_1/_ide/bitstream/AudioProcessing2.bit --elf C:/Users/machk/gitkraken/Audio_Processing/LAB2/InterruptSignalApp_1/Debug/InterruptSignalApp_1.elf,ps7_cortexa9_0
+ECHO is off.
+ECHO is off.
+creating BOOT.BIN using C:/Users/machk/gitkraken/Audio_Processing/LAB2/InterruptSignalApp_1/_ide/bitstream/AudioProcessing2.bit
+Running C:/Xilinx/Vitis/2023.2/bin/bootgen  -image C:/Users/machk/gitkraken/Audio_Processing/LAB2/InterruptSignalApp_1_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

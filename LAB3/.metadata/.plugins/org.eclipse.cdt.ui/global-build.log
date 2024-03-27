@@ -1,0 +1,23 @@
+Nothing to build in platform 'AudioProcessing2'
+
+13:32:40 **** Build of configuration Debug for project DSPApp ****
+make -j12 all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -DDISABLEFLOAT16 -DARM_MATH_NEON -Wall -O0 -g3 -IC:/Users/machk/gitkraken/Audio_Processing/LAB3/AudioProcessing2/export/AudioProcessing2/sw/AudioProcessing2/standalone_ps7_cortexa9_0/bspinclude/include -I"C:\Users\machk\gitkraken\Audio_Processing\LAB3\DSPApp\src\ComputeLibrary" -I"C:\Users\machk\gitkraken\Audio_Processing\LAB3\DSPApp\src\Include" -I"C:\Users\machk\gitkraken\Audio_Processing\LAB3\DSPApp\src\PrivateInclude" -I"C:\Users\machk\gitkraken\Audio_Processing\LAB3\DSPApp\src\Source" -I"C:\Users\machk\gitkraken\Audio_Processing\LAB3\DSPApp\src\ComputeLibrary\Include" -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=neon-vfpv4 -mfloat-abi=hard -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: DSPApp.elf'
+'Invoking: ARM v7 gcc linker'
+'Finished building target: DSPApp.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size DSPApp.elf  |tee "DSPApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+1550220	   9360	  26688	1586268	 18345c	DSPApp.elf
+'Finished building: DSPApp.elf.size'
+' '
