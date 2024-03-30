@@ -1069,3 +1069,12 @@ con
 
 11:06:27 INFO  : Launch script is exported to file 'C:\Users\machk\gitkraken\Audio_Processing\LAB4\Vraag3_App_system\_ide\scripts\debugger_vraag3_app-default.tcl'
 13:37:53 INFO  : Disconnected from the channel tcfchan#25.
+19:59:39 DEBUG : Logs will be stored at 'C:/Users/machk/gitkraken/Audio_Processing/LAB4/IDE.log'.
+19:59:40 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\machk\gitkraken\Audio_Processing\LAB4\temp_xsdb_launch_script.tcl
+19:59:45 INFO  : XSCT server has started successfully.
+19:59:45 INFO  : Successfully done setting XSCT server connection channel  
+19:59:45 INFO  : plnx-install-location is set to ''
+19:59:45 INFO  : Successfully done setting workspace for the tool. 
+19:59:48 INFO  : Platform repository initialization has completed.
+19:59:48 INFO  : Registering command handlers for Vitis TCF services
+19:59:50 INFO  : Successfully done query RDI_DATADIR 
