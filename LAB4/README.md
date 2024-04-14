@@ -1,9 +1,9 @@
 # Audio_Processing - LAB 4
-## Vraag 1: xxx
+## Vraag 1: 
 
-## Vraag 2: xxx
+## Vraag 2: 
 
-## Vraag 3: xxx
+## Vraag 3: 
 
 
 ## Vraag 4: xxx
