@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="Vraag5_App" location="C:/Users/machk/gitkraken/Audio_Processing/LAB4/Vraag5_App" platform="C:/Users/machk/gitkraken/Audio_Processing/LAB4/AudioProcessing2/export/AudioProcessing2/AudioProcessing2.xpfm" platformUID="xilinx:pynq-z2::0.0(custom)" systemProject="Vraag5_App_system" sysConfig="AudioProcessing2" runtime="C/C++" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="0e0e7f286dac6f856e9f0762c299b620">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.761264802">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.788239477" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

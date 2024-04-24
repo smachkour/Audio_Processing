@@ -1,0 +1,33 @@
+17:10:35 **** Incremental Build of configuration Debug for project Vraag5_App ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/machk/gitkraken/Audio_Processing/LAB4/AudioProcessing2/export/AudioProcessing2/sw/AudioProcessing2/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Timer_Intr_Setup':
+../src/helloworld.c:74:13: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+   74 |         int Status;
+      |             ^~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:95:13: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+   95 |         int Status;
+      |             ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Vraag5_App.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/machk/gitkraken/Audio_Processing/LAB4/AudioProcessing2/export/AudioProcessing2/sw/AudioProcessing2/standalone_ps7_cortexa9_0/bsplib/lib -o "Vraag5_App.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Vraag5_App.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Vraag5_App.elf  |tee "Vraag5_App.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33456	   1936	  22664	  58056	   e2c8	Vraag5_App.elf
+'Finished building: Vraag5_App.elf.size'
+' '
+
+17:10:36 Build Finished (took 1s.61ms)
+

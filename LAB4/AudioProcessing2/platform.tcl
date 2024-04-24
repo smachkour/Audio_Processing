@@ -22,3 +22,9 @@ platform generate -quick
 platform generate
 platform clean
 platform generate
+platform generate
+platform clean
+platform generate
+platform active {AudioProcessing2}
+bsp reload
+platform generate -domains 

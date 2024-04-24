@@ -1,0 +1,14 @@
+16:41:26 **** Incremental Build of configuration Debug for project Vraag5_App_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 24649 C:/Users/machk/gitkraken/Audio_Processing/LAB4/AudioProcessing2/export/AudioProcessing2/AudioProcessing2.xpfm standalone_ps7_cortexa9_0 C:/Users/machk/gitkraken/Audio_Processing/LAB4/Vraag5_App_system/Debug/system.bif
+ECHO is off.
+ECHO is off.
+sdcard_gen --xpfm C:/Users/machk/gitkraken/Audio_Processing/LAB4/AudioProcessing2/export/AudioProcessing2/AudioProcessing2.xpfm --sys_config AudioProcessing2 --bif C:/Users/machk/gitkraken/Audio_Processing/LAB4/Vraag5_App_system/Debug/system.bif --bitstream C:/Users/machk/gitkraken/Audio_Processing/LAB4/Vraag5_App/_ide/bitstream/AudioProcessing2.bit --elf C:/Users/machk/gitkraken/Audio_Processing/LAB4/Vraag5_App/Debug/Vraag5_App.elf,ps7_cortexa9_0
+ECHO is off.
+ECHO is off.
+creating BOOT.BIN using C:/Users/machk/gitkraken/Audio_Processing/LAB4/Vraag5_App/_ide/bitstream/AudioProcessing2.bit
+Running C:/Xilinx/Vitis/2023.2/bin/bootgen  -image C:/Users/machk/gitkraken/Audio_Processing/LAB4/Vraag5_App_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+16:41:33 Build Finished (took 7s.858ms)
+
