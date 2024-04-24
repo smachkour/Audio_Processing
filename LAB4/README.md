@@ -1,9 +1,9 @@
-# Audio_Processing - LAB 4
+# Audio_Processing - LAB 4 - Signaalgeneratie Part 2 en Aliasing
 ## Vraag 1: 
-Matlab / Octave exercises
+Matlab / Octave exercises - Aliasing
 
 ## Vraag 2: 
-Matlab / Octave exercises
+Matlab / Octave exercises - Aliasing
 
 
 ## Vraag 3: Vraag3_App
@@ -43,3 +43,7 @@ editeer bovenstaande programma met een nieuwe array:
 square_table[loopsize]= {10000, 10000, 10000, 10000,-10000,-10000,-10000,-10000};
 
 en pas eventuele andere stukje code aan indien nodig.
+
+## Vraag 9: Vraag5_App
+Vervolg op Vraag5.
+Pas bovenstaande code aan voor een square wave van 500Hz (8000Hz sampling).

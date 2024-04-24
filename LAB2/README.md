@@ -1,4 +1,4 @@
-# Audio_Processing - LAB 2
+# Audio_Processing - LAB 2 - Sampling rate, Delay en Echo
 ## Vraag 1: InterruptSignalApp_1
 Voeg aan onderstaande programma code toe om je sampling rate te controleren (tip: stuur een GPIO pin aan) en meet deze na door gebruik te maken van een oscilloscoop. 
 ## Vraag 2: DelayApp_2
