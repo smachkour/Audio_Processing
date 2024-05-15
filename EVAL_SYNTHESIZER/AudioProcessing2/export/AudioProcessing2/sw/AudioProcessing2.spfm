@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdx:platform sdx:vendor="xilinx.com"
+              sdx:library="sdx"
+              sdx:name="AudioProcessing2"
+              sdx:version="1.0"
+              sdx:schemaVersion="1.0"
+              xmlns:sdx="http://www.xilinx.com/sdx">
+    <sdx:description>
+AudioProcessing2
+    </sdx:description>
+    <sdx:systemConfigurations sdx:defaultConfiguration="AudioProcessing2">
+        <sdx:configuration sdx:name="AudioProcessing2"
+                           sdx:displayName="AudioProcessing2"
+                           sdx:defaultProcessorGroup="standalone_ps7_cortexa9_0"
+                           sdx:runtimes="cpp">
+            <sdx:description>AudioProcessing2</sdx:description>
+            <sdx:bootImages sdx:default="standard">
+                <sdx:image sdx:name="standard"
+                            sdx:bif=""
+                            sdx:imageData=""
+                            sdx:readme="AudioProcessing2/boot/generic.readme"
+                            sdx:qemuArguments="AudioProcessing2/qemu/qemu_args.txt"
+                            />
+                <sdx:image sdx:name="standalone_ps7_cortexa9_0"
+                            sdx:bif="AudioProcessing2/boot/AudioProcessing2.bif"
+                            sdx:readme="AudioProcessing2/boot/generic.readme"
+                            sdx:qemuArguments="AudioProcessing2/standalone_ps7_cortexa9_0/qemu/qemu_args.txt"
+                            />
+            </sdx:bootImages>
+            <sdx:processorGroup sdx:name="standalone_ps7_cortexa9_0"
+                                sdx:displayName="standalone_ps7_cortexa9_0"
+                                sdx:cpuType="cortex-a9"
+                                sdx:cpuInstance="ps7_cortexa9_0">
+                <sdx:os sdx:name="standalone"
+                        sdx:displayName="standalone"
+                        sdx:bspLibraryPaths="AudioProcessing2/standalone_ps7_cortexa9_0/bsplib/lib"
+                        sdx:bspIncludePaths="AudioProcessing2/standalone_ps7_cortexa9_0/bspinclude/include"
+                        sdx:bspConfig="AudioProcessing2/standalone_ps7_cortexa9_0/system.mss"
+                />
+            </sdx:processorGroup>
+        </sdx:configuration>
+    </sdx:systemConfigurations>
+</sdx:platform>

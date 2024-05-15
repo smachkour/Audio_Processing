@@ -1,0 +1,14 @@
+2024-05-08T09:38:15.934159800255-09:38:15 **** Incremental Build of configuration Debug for project DTMF_Receive_App_system ****
+000-make all 
+000-Generating bif file for the system project
+000-generate_system_bif.bat 51377 C:/Users/machk/gitkraken/Audio_Processing/EVAL_DMTF/AudioProcessing2/export/AudioProcessing2/AudioProcessing2.xpfm standalone_ps7_cortexa9_0 C:/Users/machk/gitkraken/Audio_Processing/EVAL_DMTF/DTMF_Receive_App_system/Debug/system.bif
+000-ECHO is off.
+000-ECHO is off.
+000-sdcard_gen --xpfm C:/Users/machk/gitkraken/Audio_Processing/EVAL_DMTF/AudioProcessing2/export/AudioProcessing2/AudioProcessing2.xpfm --sys_config AudioProcessing2 --bif C:/Users/machk/gitkraken/Audio_Processing/EVAL_DMTF/DTMF_Receive_App_system/Debug/system.bif --bitstream C:/Users/machk/gitkraken/Audio_Processing/EVAL_DMTF/DTMF_Receive_App/_ide/bitstream/AudioProcessing2.bit --elf C:/Users/machk/gitkraken/Audio_Processing/EVAL_DMTF/DTMF_Receive_App/Debug/DTMF_Receive_App.elf,ps7_cortexa9_0
+000-ECHO is off.
+000-ECHO is off.
+000-creating BOOT.BIN using C:/Users/machk/gitkraken/Audio_Processing/EVAL_DMTF/DTMF_Receive_App/_ide/bitstream/AudioProcessing2.bit
+000-Running C:/Xilinx/Vitis/2023.2/bin/bootgen  -image C:/Users/machk/gitkraken/Audio_Processing/EVAL_DMTF/DTMF_Receive_App_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+00255-
+09:38:24 Build Finished (took 8s.660ms)
+

@@ -1,0 +1,33 @@
+2024-04-29T20:04:30.664943700255-20:04:30 **** Incremental Build of configuration Debug for project DMTF_App ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-'Building file: ../src/helloworld.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/machk/gitkraken/Audio_Processing/EVAL_DMTF/AudioProcessing2/export/AudioProcessing2/sw/AudioProcessing2/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+000-../src/helloworld.c: In function 'Timer_Intr_Setup':
+000/DMTF_App/src/helloworld.c164-1-1variable 'Status' set but not used [-Wunused-but-set-variable]1-../src/helloworld.c:164:13: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+000-  164 |         int Status;
+000-      |             ^~~~~~
+000-../src/helloworld.c: In function 'main':
+000/DMTF_App/src/helloworld.c185-1-1variable 'Status' set but not used [-Wunused-but-set-variable]1-../src/helloworld.c:185:13: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+000-  185 |         int Status;
+000-      |             ^~~~~~
+000-'Finished building: ../src/helloworld.c'
+000-' '
+000-'Building target: DMTF_App.elf'
+000-'Invoking: ARM v7 gcc linker'
+000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/machk/gitkraken/Audio_Processing/EVAL_DMTF/AudioProcessing2/export/AudioProcessing2/sw/AudioProcessing2/standalone_ps7_cortexa9_0/bsplib/lib -o "DMTF_App.elf"  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: DMTF_App.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size DMTF_App.elf  |tee "DMTF_App.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  92401	   3352	  22752	 118505	  1cee9	DMTF_App.elf
+000-'Finished building: DMTF_App.elf.size'
+000-' '
+00255-
+20:04:31 Build Finished (took 985ms)
+
